@@ -16,3 +16,7 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Servidor rodando em http://localhost:${PORT}`);
 });
+
+app.get("/ola", (req, res) => {
+  res.send("Bem-vindo ao ola!");
+});
